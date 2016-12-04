@@ -1,0 +1,239 @@
+body{
+  font-family: Dancing Script;
+  background-color: #02010a;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px #02010a;
+}
+
+@media screen and (max-width:480px){
+  #contenido{
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  header{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column !important;
+    -webkit-flex-flow: column !important;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+
+  header h1{
+    width: 100% !important;
+  }
+
+  header div{
+    width: 100% !important;
+  }
+
+  .img_secundaria{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column !important;
+    -webkit-flex-flow: column !important;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+
+  .sec_izq{
+    width: 100% !important;
+  }
+
+  .sec_der{
+    width: 100% !important;
+  }
+
+  footer{
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column !important;
+    -webkit-flex-flow: column !important;
+  }
+
+  footer div{
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .img_secundaria .con_1{
+      width: 100% !important;
+  }
+}
+
+#contenido{
+  width: 900px;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #5b7989;
+  color: white;
+  -webkit-text-shadow: 0 0 2px #02010a;
+  -moz-text-shadow: 0 0 2px #02010a;
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  animation-name: animacion_header;
+  animation-duration: 2s;
+}
+
+header h1{
+  width: 50%;
+  text-align: center;
+  text-shadow: 0 0 2px #02010a;
+}
+
+header div{
+    width: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;  /* alineacion vertical */
+    justify-content: center; /* alineacion horizontal */
+}
+
+header div a{
+  color: white;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#img_central{
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+#img_central img{
+  margin: 20px;
+  width: 75%;
+}
+
+.img_secundaria{
+  background-color: #d5c75f;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+.img_secundaria [class*="sec"]{
+  /*flex: auto;*/
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sec_izq{
+  width: 50%;
+  order: 1;
+}
+
+.sec_der{
+  width: 50%;
+  order: 2;
+}
+
+.sec_izq img,.sec_der img{
+  width: 75%;
+  border: solid 1px black;
+}
+
+.sec_izq img:hover{
+  width: 75%;
+  animation-name: animacion_izquierda;
+  animation-duration: 2s;
+}
+
+.sec_der img:hover{
+  width: 75%;
+  animation-name: animacion_derecha;
+  animation-duration: 2s;
+}
+
+@keyframes animacion_izquierda{
+	from{
+    transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes animacion_derecha{
+	from{
+    transform: translate(5px,20px);
+    -moz-transform: translate(5px,20px);
+    -o-transform: translate(5px,20px);
+    -webkit-transform: translate(5px,20px);
+  }
+}
+
+footer{
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+}
+
+footer div{
+  width: 25%;
+  text-align: center;
+}
+
+footer img{
+  margin-right:10px;
+}
+
+.img_secundaria .con_1{
+  width: 33.3%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img_secundaria .con_1 img{
+  width: 85%;
+}
+
+.img1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+.img2,.img4,.img6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+.img3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(100%);
+}
+
+@keyframes animacion_header{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
