@@ -1,0 +1,92 @@
+.logo_redes{
+  background: #B0E0E6;
+}
+
+.img_logo{
+  width: 15%;
+  vertical-align: middle;
+}
+
+.columna_logo{
+  line-height: 120px;
+}
+
+.column_contenido{
+  background: #FFE4E1;
+}
+
+.columna_redes{
+  line-height: 120px;
+}
+
+.img_redes{
+  width: 8%;
+  margin-left: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align:bottom;
+}
+
+.col_nav{
+  background: red;
+  height: 50px;
+}
+
+.fila_contenido{
+  min-height: 295px;
+  border: solid 1px;
+  position: relative;
+}
+
+.img_contenido{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img_gly{
+  font-size: 3em;
+}
+
+.width-area{
+  width: 100%;
+}
+
+.fila_buscar{
+  margin-top: 20px;
+}
+
+.column_buscar{
+  background: #EEE8AA;
+}
+
+.buscar_borde{
+  border-radius: 15px;
+}
+
+.pos_list{
+  width: 90%;
+  margin-top: 20px;
+}
+
+.tamaño{
+  width: 90%;
+}
+
+.col_gly{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 770px) {
+  .img_logo{
+    width: 35%;
+  }
+
+  .columna_logo{
+    text-align: center;
+  }
+
+  .columna_redes{
+    text-align: center;
+  }
+}
